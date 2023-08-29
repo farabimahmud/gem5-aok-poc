@@ -2,9 +2,13 @@
 source ~/.bashrc; 
 # for((i=0; i<100; i++))
 # do
-for n in 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 1 1 0 0 1 1 1 0 0 1 0 0 1 0 1 1 1 0 1 0 1 0 1 1 0 0 0 0 1 0 0 0 1 1 1 1 0 1 1 0 1 0 0 0 0 1 1 1 0 1 0 0 0 1 1 1 0 0 1 0 1 1 1 0 1 0 0 1 1 1 1 0 0 1 0 0 0 0 0 1 0 1
+j=0;
+echo "Timeline,Value,Latency" > results.csv;
 
+for n in 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 1 1 0 0 1 1 1 0 0 1 0 0 1 0 1 1 1 0 1 0 1 0 1 1 0 0 0 0 1 0 0 0 1 1 1 1 0 1 1 0 1 0 0 0 0 1 1 1 0 1 0 0 0 1 1 1 0 0 1 0 1 1 1 0 1 0 0 1 1 1 1 0 0 1 0 0 0 0 0 1 0 1
 do
+  j=$((j+1));
+  echo -n "$j," >> results.csv;
   ./build/X86_MESI_Two_Level/gem5.opt \
     configs/example/se.py \
     --redirects /lib64=/home/grads/f/farabi/lib64 \

@@ -47,7 +47,7 @@ int main(int argc, char* argv[]){
     t2 = rdtscp(junk);
     t = t2- t1;
     FILE *fp = fopen("/home/grads/f/farabi/gem5-aok-poc/results.csv","a");
-    fprintf(fp,"%d,%ld,%d\n",index,t,secretbit);
+    fprintf(fp,"%d,%ld\n",secretbit,t);
     fclose(fp);
 
     return 0;
