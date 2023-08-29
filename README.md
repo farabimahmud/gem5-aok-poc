@@ -40,7 +40,7 @@ To run the attack in Gem5 simulator you can use the `run-attack-in-gem5.sh` file
 It contains the current configuration for the Gem5 simulator and also specifies the attack.
 We have generated 100 numbers from using python3 `random.choice` while using the random seed 42
 
-Here is the detailed script for the gem5 script 
+Here is the detailed script for the gem5. This will run one round of timing which might take ~1 Hour in a 3GHz PC. 
 ```
   ./build/X86_MESI_Two_Level/gem5.opt \
     configs/example/se.py \
