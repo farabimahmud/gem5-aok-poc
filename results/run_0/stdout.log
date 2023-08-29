@@ -1,0 +1,12 @@
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 20.0.0.0
+gem5 compiled Aug 28 2023 02:01:29
+gem5 started Aug 28 2023 13:04:12
+gem5 executing on atlas.engr.tamu.edu, pid 31300
+command line: ./build/X86_MESI_Two_Level/gem5.opt --outdir=/home/grads/f/farabi/gem5-aok-poc/results/run_0 --redirect-stdout --redirect-stderr --stdout-file=/home/grads/f/farabi/gem5-aok-poc/results/run_0/stdout.log --stderr-file=/home/grads/f/farabi/gem5-aok-poc/results/run_0/stderr.log configs/example/se.py --redirects /lib64=/home/grads/f/farabi/lib64 --cpu-type=DerivO3CPU --num-cpu=64 --num-dirs=64 --network=garnet2.0 --ruby --caches --l2cache --l1d_size=16kB --l1d_assoc=4 --l2_size=2MB --l2_assoc=8 --num-l2cache=64 --topology=Mesh_XY --mesh-row=8 --cmd=/home/grads/f/farabi/gem5-aok-poc/a.out '--options=1 run_0' --mem-size=4GB
+
+Global frequency set at 1000000000000 ticks per second
+**** REAL SIMULATION ****
+Exiting @ tick 2251231977 because exiting with last active thread context

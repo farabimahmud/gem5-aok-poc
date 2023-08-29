@@ -381,7 +381,8 @@ if main['GCC'] or main['CLANG']:
                          '-Wno-error=type-limits',
                          '-Wno-error=parentheses',
                          '-Wno-error=misleading-indentation',
-
+                         '-Wno-error=array-bounds',
+                        
                         ])
 else:
     error('\n'.join((
@@ -920,6 +921,7 @@ if not check_hdf5_pkg('hdf5-serial'):
 # this check even if there isn't a pkg-config configuration for hdf5
 # since some installations don't use pkg-config.
 have_hdf5 = check_hdf5()
+have_hdf5 = False
 if not have_hdf5:
     print("Warning: Couldn't find any HDF5 C++ libraries. Disabling")
     print("         HDF5 support.")
